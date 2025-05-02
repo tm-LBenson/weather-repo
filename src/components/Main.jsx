@@ -30,7 +30,7 @@ export default function Main() {
     async function getWeatherData() {
       try {
         const res = await fetch(
-          `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`,
+          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`,
         );
         const data = await res.json();
 
