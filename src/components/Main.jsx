@@ -11,7 +11,7 @@ export default function Main() {
   async function getLocationData() {
     try {
       const res = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`,
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${key}`,
       );
 
       const data = await res.json();
